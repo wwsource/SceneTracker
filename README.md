@@ -1,3 +1,3 @@
 # SceneTracker
 
-The code will be released after the paper is accepted.
+The code is coming soon!
