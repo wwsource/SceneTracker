@@ -12,7 +12,7 @@ This repository contains the source code for our paper:
 
 ## Updates
 - [April 29, 2024] 📣 The code of SceneTracker is coming soon!
-- [April 28, 2024] 📣 The data of LSFDriving is coming soon!
+- [April 28, 2024] 📣 The data of LSFOdyssey and LSFDriving is coming soon!
 - [March 29, 2024] 📣 The paper of SceneTracker is made public!
 
 ## Environment
