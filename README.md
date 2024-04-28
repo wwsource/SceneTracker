@@ -1,13 +1,18 @@
 # SceneTracker: Long-term Scene Flow Estimation Network
 This repository contains the source code for our paper:
 - SceneTracker: Long-term Scene Flow Estimation Network | [Paper](https://arxiv.org/pdf/2403.19924.pdf)
+  <img src="./asset/odyssey_test-24_0424.jpg" width="800"/>
+  <img src="./asset/metric_3d.png" width="800"/>
   - [x] To better capture the fine-grained and long-term 3D motion, a comprehensive new task, long-term scene flow estimation (LSFE), is studied.
   - [x] A novel learning-based LSFE network, SceneTracker, is presented. SceneTracker shows superior capabilities in handling 3D spatial occlusion and depth noise interference.
-  - [x] To boost the development of the LSFE field, we build the first real-world evaluation dataset, LSFDriving, using the proposed semi-automated annotation pipeline. Specifically, the tracked points are sampled from static backgrounds, moving rigid vehicles, and moving non-rigid pedestrians' joints and garments. 
-<img src="./asset/odyssey_test-24_0424.png" width="800"/>
+  - [x] To boost the development of the LSFE field, we build the first real-world evaluation dataset, LSFDriving, using the proposed semi-automated annotation pipeline. Specifically, the tracked points are sampled from static backgrounds, moving rigid vehicles, and moving non-rigid pedestrians' joints and garments.
+
+
+  
 
 ## Updates
 - [April 29, 2024] 📣 The code of SceneTracker is coming soon!
+- [April 28, 2024] 📣 The data of LSFDriving is coming soon!
 - [March 29, 2024] 📣 The paper of SceneTracker is made public!
 
 ## Environment
