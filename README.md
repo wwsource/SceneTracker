@@ -14,24 +14,86 @@ This repository contains the source code for our paper:
 - [March 29, 2024] 📣 The paper of SceneTracker is made public!
 
 ## Environment
+
+Our code has been successfully tested in the following environments:
+
 * NVIDIA 3090 GPU
 * CUDA 11.1
 * Python 3.8
 * PyTorch 1.8.2
 
-### Create a virtual environment and activate it.
 ```
 conda create -n scenetracker python=3.8
 conda activate scenetracker
-```
 
-### Dependencies
-```
 pip install torch==1.8.2 --extra-index-url https://download.pytorch.org/whl/lts/1.8/cu111
 pip install einops==0.4.1
 pip install cupy-cuda111
 pip install pillow==9.5.0
 pip install opencv-python==4.1.2.30
+```
+
+## Datasets
+
+This repository contains our proposed LSFOdyssey and LSFDriving datasets:
+
+**1. LSFOdyssey**
+
+The dataset is organized as follows:
+
+```text
+LSFOdyssey/
+├─ train/
+│  ├─ xxx/
+│  │  ├─ 000000/
+│  │  │  ├─ rgb.mp4
+│  │  │  ├─ deps.npz
+│  │  │  └─ track.npz
+│  │  ⁞
+│  │  └─ 00000x/
+│  ⁞
+│  └─ xxx/
+│
+└─ test/
+   ├─ xxx/
+   │  ├─ 000000/
+   │  │  ├─ rgb.mp4
+   │  │  ├─ deps.npz
+   │  │  ├─ track.npz
+   │  │  └─ intris.npz
+   │  ⁞
+   │  └─ 00000x/
+   ⁞
+   └─ xxx/
+```
+
+**2. LSFDriving**
+
+The dataset is organized as follows:
+
+```text
+_
+├─ LSFDriving/
+│  ├─ background/
+│  │  ├─ xxx/
+│  │  │  ├─ rgb.mp4
+│  │  │  ├─ track.npz
+│  │  │  └─ intris.npz
+│  │  ⁞
+│  │  └─ xxx/
+│  │
+│  ├─ vehicle/
+│  │
+│  └─ person/
+│
+└─ LSFDriving_Extra/
+   ├─ background_and_vehicle_nearest/
+   │  ├─ xxx/
+   │  │  └─ deps.npz
+   │  ⁞
+   │  └─ xxx/
+   │
+   └─ person/
 ```
 
 ## Citing this Work
