@@ -10,6 +10,7 @@ This repository contains the source code for our paper:
   - [x] We build the first real-world evaluation dataset, LSFDriving, further substantiating SceneTracker's commendable generalization capacity. Specifically, the tracked points are sampled from static backgrounds, moving rigid vehicles, and moving non-rigid pedestrians' joints and garments.  
 
 ## Updates
+- [May 30, 2024] 📣 The data of LSFOdyssey is released!
 - [April 29, 2024] 📣 The code of SceneTracker is coming soon!
 - [April 28, 2024] 📣 The data of LSFOdyssey and LSFDriving is coming soon!
 - [March 29, 2024] 📣 The paper of SceneTracker is made public!
@@ -36,7 +37,7 @@ pip install opencv-python==4.1.2.30
 
 ## Datasets
 
-This repository contains our proposed LSFOdyssey and LSFDriving datasets:
+This repository contains our proposed [LSFOdyssey](https://pan.baidu.com/s/1TP2b2TZ3tq5omnIZbUxa8w&pwd=u3xt) and LSFDriving datasets:
 <!-- [LSFOdyssey](https://pan.baidu.com/s/1TP2b2TZ3tq5omnIZbUxa8w&pwd=u3xt) -->
 
 **1. LSFOdyssey**
