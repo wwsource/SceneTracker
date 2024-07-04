@@ -1,6 +1,6 @@
 # SceneTracker: Long-term Scene Flow Estimation Network
 This repository contains the source code for our paper:
-- SceneTracker: Long-term Scene Flow Estimation Network | [Paper](https://arxiv.org/pdf/2403.19924.pdf)
+- SceneTracker: Long-term Scene Flow Estimation Network | [Paper](https://arxiv.org/pdf/2403.19924.pdf) | [中文介绍](https://mp.weixin.qq.com/s/XRo605YrAKbQPlQP2dELsg)
   ![](./asset/github-demo-2024_0516.jpg)
   - [x] To better capture the fine-grained and long-term 3D motion, a comprehensive new task, long-term scene flow estimation (LSFE), is studied.
   - [x] A novel learning-based LSFE network, SceneTracker, is presented. SceneTracker shows superior capabilities in handling 3D spatial occlusion and depth noise interference.
