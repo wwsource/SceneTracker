@@ -1,19 +1,16 @@
 # SceneTracker: Long-term Scene Flow Estimation Network
 This repository contains the source code for our paper:
 - SceneTracker: Long-term Scene Flow Estimation Network | [Paper](https://arxiv.org/pdf/2403.19924.pdf)
-  <img src="./asset/github-demo-2024_0516.jpg" width="800"/>
-  <!-- <img src="./asset/odyssey_test-24_0424.jpg" width="800"/> -->
-  <!-- <img src="./asset/metric_3d.png" width="800"/> -->
-  <!-- <img src="./asset/driving-2024_0506.jpg" width="800"/> -->
+  ![](./asset/github-demo-2024_0516.jpg)
   - [x] To better capture the fine-grained and long-term 3D motion, a comprehensive new task, long-term scene flow estimation (LSFE), is studied.
   - [x] A novel learning-based LSFE network, SceneTracker, is presented. SceneTracker shows superior capabilities in handling 3D spatial occlusion and depth noise interference.
   - [x] We build the first real-world evaluation dataset, LSFDriving, further substantiating SceneTracker's commendable generalization capacity. Specifically, the tracked points are sampled from static backgrounds, moving rigid vehicles, and moving non-rigid pedestrians' joints and garments.  
 
 ## Updates
-- [May 30, 2024] 📣 The data of LSFOdyssey is released!
-- [April 29, 2024] 📣 The code of SceneTracker is coming soon!
-- [April 28, 2024] 📣 The data of LSFOdyssey and LSFDriving is coming soon!
-- [March 29, 2024] 📣 The paper of SceneTracker is made public!
+- [2024.07.04] 📣 The code of SceneTracker is released!
+- [2024.05.30] 📣 The data of LSFOdyssey is released!
+- [2024.04.28] 📣 The data of LSFDriving is coming soon!
+- [2024.03.29] 📣 The paper of SceneTracker is made public!
 
 ## Environment
 
@@ -30,9 +27,10 @@ conda activate scenetracker
 
 pip install torch==1.8.2 --extra-index-url https://download.pytorch.org/whl/lts/1.8/cu111
 pip install einops==0.4.1
-pip install cupy-cuda111
 pip install pillow==9.5.0
-pip install opencv-python==4.1.2.30
+pip install opencv-python==4.9.0.80
+pip install albumentations==1.3.1
+pip install timm==0.9.12
 ```
 
 ## Datasets
@@ -98,6 +96,23 @@ _
    │
    └─ person/
 ```
+
+## Training
+
+* Train SceneTracker under the Odyssey training process.
+  ```Shell
+  bash script/train_odyssey.sh
+  ```
+  
+## Testing
+
+* Test SceneTracker on LSFOdyssey.
+  ```Shell
+  bash script/test_odyssey.sh
+  ```
+
+## Acknowledgments
+We would like to thank [CoTracker](https://github.com/facebookresearch/co-tracker), [PointOdyssey](https://github.com/y-zheng18/point_odyssey) and [SplatFlow](https://github.com/wwsource/SplatFlow) for publicly releasing their code and data.
 
 ## Citing this Work
 
