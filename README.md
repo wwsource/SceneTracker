@@ -35,67 +35,122 @@ pip install timm==0.9.12
 
 ## Datasets
 
-This repository contains our proposed [LSFOdyssey](https://pan.baidu.com/s/1TP2b2TZ3tq5omnIZbUxa8w&pwd=u3xt) and LSFDriving datasets:
-<!-- [LSFOdyssey](https://pan.baidu.com/s/1TP2b2TZ3tq5omnIZbUxa8w&pwd=u3xt) -->
+To train / test SceneTracker, you will need to download the proposed datasets.
 
-**1. LSFOdyssey**
+* [LSFOdyssey](https://pan.baidu.com/s/1TP2b2TZ3tq5omnIZbUxa8w&pwd=u3xt)
+* LSFDriving
 
-The dataset is organized as follows:
 
-```text
-LSFOdyssey/
-├─ train/
-│  ├─ xxx/
-│  │  ├─ 000000/
-│  │  │  ├─ rgb.mp4
-│  │  │  ├─ deps.npz
-│  │  │  └─ track.npz
-│  │  ⁞
-│  │  └─ 00000x/
-│  ⁞
-│  └─ xxx/
-│
-└─ test/
-   ├─ xxx/
-   │  ├─ 000000/
-   │  │  ├─ rgb.mp4
-   │  │  ├─ deps.npz
-   │  │  ├─ track.npz
-   │  │  └─ intris.npz
-   │  ⁞
-   │  └─ 00000x/
-   ⁞
-   └─ xxx/
-```
+[//]: # (**1. LSFOdyssey**)
 
-**2. LSFDriving**
+[//]: # ()
+[//]: # (The dataset is organized as follows:)
 
-The dataset is organized as follows:
+[//]: # ()
+[//]: # (```text)
 
-```text
-_
-├─ LSFDriving/
-│  ├─ background/
-│  │  ├─ xxx/
-│  │  │  ├─ rgb.mp4
-│  │  │  ├─ track.npz
-│  │  │  └─ intris.npz
-│  │  ⁞
-│  │  └─ xxx/
-│  │
-│  ├─ vehicle/
-│  │
-│  └─ person/
-│
-└─ LSFDriving_Extra/
-   ├─ background_and_vehicle_nearest/
-   │  ├─ xxx/
-   │  │  └─ deps.npz
-   │  ⁞
-   │  └─ xxx/
-   │
-   └─ person/
-```
+[//]: # (LSFOdyssey/)
+
+[//]: # (├─ train/)
+
+[//]: # (│  ├─ xxx/)
+
+[//]: # (│  │  ├─ 000000/)
+
+[//]: # (│  │  │  ├─ rgb.mp4)
+
+[//]: # (│  │  │  ├─ deps.npz)
+
+[//]: # (│  │  │  └─ track.npz)
+
+[//]: # (│  │  ⁞)
+
+[//]: # (│  │  └─ 00000x/)
+
+[//]: # (│  ⁞)
+
+[//]: # (│  └─ xxx/)
+
+[//]: # (│)
+
+[//]: # (└─ test/)
+
+[//]: # (   ├─ xxx/)
+
+[//]: # (   │  ├─ 000000/)
+
+[//]: # (   │  │  ├─ rgb.mp4)
+
+[//]: # (   │  │  ├─ deps.npz)
+
+[//]: # (   │  │  ├─ track.npz)
+
+[//]: # (   │  │  └─ intris.npz)
+
+[//]: # (   │  ⁞)
+
+[//]: # (   │  └─ 00000x/)
+
+[//]: # (   ⁞)
+
+[//]: # (   └─ xxx/)
+
+[//]: # (```)
+
+[//]: # ()
+[//]: # (**2. LSFDriving**)
+
+[//]: # ()
+[//]: # (The dataset is organized as follows:)
+
+[//]: # ()
+[//]: # (```text)
+
+[//]: # (_)
+
+[//]: # (├─ LSFDriving/)
+
+[//]: # (│  ├─ background/)
+
+[//]: # (│  │  ├─ xxx/)
+
+[//]: # (│  │  │  ├─ rgb.mp4)
+
+[//]: # (│  │  │  ├─ track.npz)
+
+[//]: # (│  │  │  └─ intris.npz)
+
+[//]: # (│  │  ⁞)
+
+[//]: # (│  │  └─ xxx/)
+
+[//]: # (│  │)
+
+[//]: # (│  ├─ vehicle/)
+
+[//]: # (│  │)
+
+[//]: # (│  └─ person/)
+
+[//]: # (│)
+
+[//]: # (└─ LSFDriving_Extra/)
+
+[//]: # (   ├─ background_and_vehicle_nearest/)
+
+[//]: # (   │  ├─ xxx/)
+
+[//]: # (   │  │  └─ deps.npz)
+
+[//]: # (   │  ⁞)
+
+[//]: # (   │  └─ xxx/)
+
+[//]: # (   │)
+
+[//]: # (   └─ person/)
+
+[//]: # (```)
 
 ## Training
 
