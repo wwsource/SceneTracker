@@ -152,6 +152,13 @@ To train / test SceneTracker, you will need to download the proposed datasets.
 
 [//]: # (```)
 
+## Trained Weights
+
+| Model        | Training set | Weights                                                                                   | Comments                       |
+|--------------|--------------|-------------------------------------------------------------------------------------------|--------------------------------|
+| SceneTracker | LSFOdyssey   | [scenetracker_odyssey_200k.pth](https://pan.baidu.com/s/1IanI-OFXDJ9JJYY_Yxsyzw&pwd=wang) | Best performance on LSFOdyssey |
+
+
 ## Training
 
 * Train SceneTracker under the Odyssey training process.
