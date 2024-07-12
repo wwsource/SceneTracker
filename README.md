@@ -46,9 +46,9 @@ pip install timm==0.9.12
 
 Download the weights below and put them in the `exp/0-pretrain` path. 
 
-| Model        | Training set | Weights                                                                                   | Comments                       |
+| Model        | Training<br/>process | Weights                                                                                   | Comments                       |
 |--------------|--------------|-------------------------------------------------------------------------------------------|--------------------------------|
-| SceneTracker | LSFOdyssey   | [scenetracker_odyssey_200k.pth](https://pan.baidu.com/s/1IanI-OFXDJ9JJYY_Yxsyzw&pwd=wang) | Best performance on LSFOdyssey |
+| SceneTracker | Odyssey      | [scenetracker_odyssey_200k.pth](https://pan.baidu.com/s/1IanI-OFXDJ9JJYY_Yxsyzw&pwd=wang) | Best performance on LSFOdyssey |
 
 
 ## Demo
