@@ -60,7 +60,7 @@ Download the weights below and put them in the `exp/0-pretrain` path.
 
 ## Datasets
 
-To train / test SceneTracker, you will need to download the proposed datasets.
+To train / test SceneTracker, you will need to download the proposed datasets and update `data_root` in `data/dataset.py`.
 
 * [LSFOdyssey](https://pan.baidu.com/s/1TP2b2TZ3tq5omnIZbUxa8w&pwd=u3xt)
 * LSFDriving
