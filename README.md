@@ -41,6 +41,15 @@ pip install albumentations==1.3.1
 pip install timm==0.9.12
 ```
 
+## Trained Weights
+
+Download the weights below and put them in the `exp/0-pretrain` path. 
+
+| Model        | Training set | Weights                                                                                   | Comments                       |
+|--------------|--------------|-------------------------------------------------------------------------------------------|--------------------------------|
+| SceneTracker | LSFOdyssey   | [scenetracker_odyssey_200k.pth](https://pan.baidu.com/s/1IanI-OFXDJ9JJYY_Yxsyzw&pwd=wang) | Best performance on LSFOdyssey |
+
+
 ## Demo
 
 * Quick start.
@@ -166,12 +175,6 @@ To train / test SceneTracker, you will need to download the proposed datasets.
 [//]: # (   └─ person/)
 
 [//]: # (```)
-
-## Trained Weights
-
-| Model        | Training set | Weights                                                                                   | Comments                       |
-|--------------|--------------|-------------------------------------------------------------------------------------------|--------------------------------|
-| SceneTracker | LSFOdyssey   | [scenetracker_odyssey_200k.pth](https://pan.baidu.com/s/1IanI-OFXDJ9JJYY_Yxsyzw&pwd=wang) | Best performance on LSFOdyssey |
 
 
 ## Training
