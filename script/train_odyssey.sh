@@ -1,3 +1,8 @@
+# @File: train_odyssey.sh
+# @Project: SceneTracker
+# @Author : wangbo
+# @Time : 2024.07.04
+
 export CUDA_VISIBLE_DEVICES="0, 1, 2, 3, 4, 5, 6, 7"
 python -m torch.distributed.launch --nproc_per_node 8 run_train.py \
 --exp_name train_odyssey \

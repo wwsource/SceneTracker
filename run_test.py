@@ -1,7 +1,7 @@
 # @File: run_test.py
 # @Project: SceneTracker
 # @Author : wangbo
-# @Time : 2024.07.04
+# @Time : 2024.07.12
 
 import argparse
 import torch.nn.functional as F
@@ -11,10 +11,10 @@ from model.util import reduce_masked_mean, reduce_masked_median
 from data.dataset import *
 
 @torch.no_grad()
-def validate_odyssey(model):
+def validate_odyssey(model, split='test'):
     print('Start testing splatflow on LSFOdyssey...')
 
-    val_set = WWOdyssey(seq_len=-1, track_point_num=-1, split='test')
+    val_set = WWOdyssey(seq_len=-1, track_point_num=-1, split=split)
     data_num = len(val_set)
     print(f'Dataset length {data_num}')
 

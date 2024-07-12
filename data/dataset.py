@@ -1,7 +1,7 @@
 # @File: dataset.py
 # @Project: SceneTracker
 # @Author : wangbo
-# @Time : 2024.07.04
+# @Time : 2024.07.12
 
 import os.path
 from glob import glob
@@ -110,7 +110,7 @@ class WWOdyssey(LongTermSceneFlowDataset):
         self.track_point_num = track_point_num
         self.split = split
 
-        data_root = f'{root}/{split}'
+        data_root = 'data/demo' if split == 'demo' else f'{root}/{split}'
 
         seq_path_list = []
         for seq_path in glob(os.path.join(data_root, "*")):
@@ -130,7 +130,7 @@ class WWOdyssey(LongTermSceneFlowDataset):
                     'mp4_name_path': mp4_name_path,
                     'deps_name_path': deps_name_path,
                     'track_name_path': track_name_path,
-                    'intris_name_path': intris_name_path if split == 'test' else None,
+                    'intris_name_path': intris_name_path if split != 'train' else None,
                 }]
 
     def read_mp4(self, name_path):
@@ -194,7 +194,7 @@ class WWOdyssey(LongTermSceneFlowDataset):
         du['valids'] = track[..., 4:5]  # shape: (T, N, 1)
         du['seq_len'] = seq_len
         du['track_point_num'] = track_point_num
-        if self.split == 'test':
+        if self.split != 'train':
             du['query_points'] = query_points  # shape: (N, 4)
             du['intris'] = intris
             du['extris'] = extris

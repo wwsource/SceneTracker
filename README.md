@@ -1,3 +1,11 @@
+[//]: # (@File: README.md)
+
+[//]: # (@Project: SceneTracker)
+
+[//]: # (@Author : wangbo)
+
+[//]: # (@Time : 2024.07.12)
+
 # SceneTracker: Long-term Scene Flow Estimation Network
 This repository contains the source code for our paper:
 - SceneTracker: Long-term Scene Flow Estimation Network | [Paper](https://arxiv.org/pdf/2403.19924.pdf) | [中文介绍](https://mp.weixin.qq.com/s/XRo605YrAKbQPlQP2dELsg)
@@ -32,6 +40,13 @@ pip install opencv-python==4.9.0.80
 pip install albumentations==1.3.1
 pip install timm==0.9.12
 ```
+
+## Demo
+
+* Quick start.
+  ```Shell
+  bash script/demo.sh
+  ```
 
 ## Datasets
 
