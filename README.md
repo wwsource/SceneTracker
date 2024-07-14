@@ -4,7 +4,7 @@
 
 [//]: # (@Author : wangbo)
 
-[//]: # (@Time : 2024.07.12)
+[//]: # (@Time : 2024.07.14)
 
 # SceneTracker: Long-term Scene Flow Estimation Network
 This repository contains the source code for our paper:
@@ -62,7 +62,7 @@ Download the weights below and put them in the `exp/0-pretrain` path.
 
 To train / test SceneTracker, you will need to download the proposed datasets and update `data_root` in `data/dataset.py`.
 
-* [LSFOdyssey](https://pan.baidu.com/s/1TP2b2TZ3tq5omnIZbUxa8w&pwd=u3xt)
+* LSFOdyssey: [Huggingface](https://huggingface.co/datasets/wwcreator/LSFOdyssey) | [BaiduNetdisk](https://pan.baidu.com/s/1TP2b2TZ3tq5omnIZbUxa8w&pwd=u3xt)
 * LSFDriving
 
 
