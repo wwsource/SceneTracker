@@ -15,6 +15,7 @@ This repository contains the source code for our paper:
   - [x] We build the first real-world evaluation dataset, LSFDriving, further substantiating SceneTracker's commendable generalization capacity. Specifically, the tracked points are sampled from static backgrounds, moving rigid vehicles, and moving non-rigid pedestrians' joints and garments.  
 
 ## Updates
+- [2025.05.19] 📣 The paper of SceneTracker is accepted by T-PAMI 2025!
 - [2024.07.12] 📣 A demo of SceneTracker is released!
 - [2024.07.04] 📣 The code and trained weights of SceneTracker are released!
 - [2024.05.30] 📣 The data of LSFOdyssey is released!
