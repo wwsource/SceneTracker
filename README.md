@@ -205,6 +205,9 @@ If you find our repository useful, please consider giving it a star ⭐ and citi
   title={Scenetracker: Long-term scene flow estimation network},
   author={Wang, Bo and Li, Jian and Yu, Yang and Liu, Li and Sun, Zhenping and Hu, Dewen},
   journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume={47},
+  number={9},
+  pages={8305--8312},
   year={2025},
   publisher={IEEE}
 }
